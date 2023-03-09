@@ -6,3 +6,8 @@ li {
   list-style-type: space-counter;
 }
 
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
