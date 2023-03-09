@@ -36,3 +36,119 @@ body h1 + p .special {
   background-color: black;
   padding: 5px;
 }
+
+body {
+  background-color: pink;
+}
+
+@media (min-width: 30em) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* В четырёхзначных стенографиях наподобие padding и margin значения добавляются
+   в порядке верх–право–низ–лево (по часовой стрелке сверху). В трёхзначных стенограммах
+   значения добавляются в порядке верх(низ)–право–лево.
+   В двузначных стенограммах значения добавляются
+   от верхнего/нижнего края к левому/правому краю */
+padding: 10px 15px 15px 5px;
+
+/*
+padding-top: 10px;    то же самое
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 5px;
+
+padding-block-start: 10px и это то же самое
+padding-inline-end: 15px;
+padding-block-end: 15px;
+padding-inline-start: 5px;
+*/
+
+background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+
+/*
+background-color: red;
+background-image: url(bg-graphic.png);
+background-position: 10px 10px;
+background-repeat: repeat-x;
+background-scroll: fixed;
+*/
+
+
+/* Работаю над основными элементами */
+/* -------------------------------------------------------------------------------------------- */
+body {
+  font: 1em/150% Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 33em;
+}
+
+@media (min-width: 70em) {
+  /* Позволяет определить размер шрифта. На широких экранах
+     больше размер шрифта для удобства чтения */
+  body {
+    font-size: 130%;
+  }
+}
+
+h1 {font-size: 1.5em;}
+
+/* Работаю над элементами, вложенными в DOM  */
+/* -------------------------------------------------------------------------------------------- */
+div p, #id:first-line {
+  background-color: red;
+  background-style: none
+}
+
+div p{
+  margin: 0;
+  padding: 1em;
+}
+
+div p + p {
+  padding-top: 0;
+}
+
+/*.special {
+  color: red;
+}*/
+
+p {
+  color: blue;
+}
+
+
+body {
+  font: 1em/150% Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 33em;
+}
+
+@media (min-width: 70em) {
+  body {
+    font-size: 130%;
+  }
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+div p,
+#id:first-line {
+  background-color: red;
+  background-style: none
+}
+
+div p {
+  margin: 0;
+  padding: 1em;
+}
+
+div p + p {
+  padding-top: 0;
+}
