@@ -60,12 +60,39 @@
 
         <h2>Strings</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+        <p>Here we have some shit code:</p>
 
-        <h3>Subsection</h3>
+        <pre class="crap">
+          public static class Kata
+          {
+            public static int CountSmileys(string[] smileys) 
+            {
+              if(smileys.Length == 0) return 0;
+    
+              char validSmiley1 = ')';
+              char validSmiley1 = 'D';
+              int count = 0;
+              
+              smileys.Split(' ');
+              
+              foreach(string s in smileys){
+                if(s == validSmiley1 || s == validSmiley2){
+                  count++;
+                }
+              }
+              return count;
+            }
+          }
+        </pre>
 
-        <p>Donec ut librero <span class="special">sed accu vehicula ultricies</span> a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+        <h3>Here is what we get by running this:</h3>
 
+        <p></p>src/Solution.cs(8,11): <span class="special">error CS0128</span>: A local variable or function named 'validSmiley1' is already defined in this scope
+        <p></p>src/Solution.cs(11,14): <span class="special">error CS1061</span>: 'string[]' does not contain a definition for 'Split' and no accessible extension method 'Split' accepting a first argument of type 'string[]' could be found (are you missing a using directive or an assembly reference?)
+        <p></p>src/Solution.cs(13,11): <span class="special">error CS0019</span>: Operator '==' cannot be applied to operands of type 'string' and 'char'
+        <p></p>src/Solution.cs(13,37): <span class="special">error CS0103</span>: The name 'validSmiley2' does not exist in the current context
+        <p></p>src/Solution.cs(8,11): <span class="special">warning CS0219</span>: The variable 'validSmiley1' is assigned but its value is never used
+        
       </article>
 
       <article>
@@ -125,6 +152,23 @@
       <p>©(Copyright by) Website for no one, 2050. All rights reserved.</p>
       <a href="mailto:jean8valjean@mail.ru">Send message to nowhere</a>
     </footer>
+
+    <figure role="img" aria-labelledby="cow-caption">
+      <pre>
+      ____________________________
+    <  I am an expert in my field.  >
+      ----------------------------
+             \   ^__^
+              \  (oo)\_______
+                 (__)\       )\/\
+                     ||----w |
+                     ||     ||
+      </pre>
+      <figcaption id="cow-caption">
+        The cow says: "I am an expert in my field." The cow is illustrated using pre-formatted text characters.
+      </figcaption>
+    </figure>
+    
     
     <h1>Number guessing game</h1>
 
