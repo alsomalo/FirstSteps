@@ -20,7 +20,7 @@ h1 + p {
 }
 
 a:link {
-  color: pink;
+  color: white;
 }
 
 a:visited {
@@ -32,13 +32,13 @@ a:hover {
 }
 
 body h1 + p .special {
-  color: yellow;
+  color: rebeccapurple;
   background-color: black;
   padding: 5px;
 }
 
 body {
-  background-color: pink;
+  background-color: rgb(255, 255, 255);
 }
 
 /*
