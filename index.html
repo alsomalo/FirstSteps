@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>C# bad guide</title>
+    <title>My C# path</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
 
     <!-- следующие 3 строки нужны для корректного отображения семантических элементов HTML5 в старых версиях Internet Explorer-->
@@ -19,16 +19,16 @@
     <!-- Вот наш главный заголовок, который используется на всех страницах нашего веб-сайта -->
 
     <header>
-      <h1>Examples of code you should not use</h1>
+      <h1>What I use to learn programming</h1>
       <link rel="stylesheet" href="css/Style.css">
     </header>
 
     <nav>
       <ul>
-        <li><a href="#">Arrays</a></li>
-        <li class="special"><a href="#">Strings</a></li>
-        <li><a href="#">Structs</a></li>
-        <li><a href="#">Collections</a></li>
+        <li><a href="#">Some common words</a></li>
+        <li class="special"><a href="#">Websites</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">YouTube channels</a></li>
         <link rel="stylesheet" href="css/Style.css">
       </ul>
 
@@ -46,7 +46,7 @@
       <!-- Она содержит статью -->
       <article>
 
-        <h2>Arrays</h2>
+        <h2>Some common words</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
@@ -58,46 +58,21 @@
 
       <article>
 
-        <h2>Strings</h2>
+        <h2>Websites</h2>
 
         <p>Here we have some shit code:</p>
 
-        <pre class="crap">
-          public static class Kata
-          {
-            public static int CountSmileys(string[] smileys) 
-            {
-              if(smileys.Length == 0) return 0;
-    
-              char validSmiley1 = ')';
-              char validSmiley1 = 'D';
-              int count = 0;
-              
-              smileys.Split(' ');
-              
-              foreach(string s in smileys){
-                if(s == validSmiley1 || s == validSmiley2){
-                  count++;
-                }
-              }
-              return count;
-            }
-          }
-        </pre>
+        <p><span class="special"></span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-        <h3>Here is what we get by running this:</h3>
+        <h3>Subsection</h3>
 
-        <p></p>src/Solution.cs(8,11): <span class="special">error CS0128</span>: A local variable or function named 'validSmiley1' is already defined in this scope
-        <p></p>src/Solution.cs(11,14): <span class="special">error CS1061</span>: 'string[]' does not contain a definition for 'Split' and no accessible extension method 'Split' accepting a first argument of type 'string[]' could be found (are you missing a using directive or an assembly reference?)
-        <p></p>src/Solution.cs(13,11): <span class="special">error CS0019</span>: Operator '==' cannot be applied to operands of type 'string' and 'char'
-        <p></p>src/Solution.cs(13,37): <span class="special">error CS0103</span>: The name 'validSmiley2' does not exist in the current context
-        <p></p>src/Solution.cs(8,11): <span class="special">warning CS0219</span>: The variable 'validSmiley1' is assigned but its value is never used
+        <p><span class="special"></span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
         
       </article>
 
       <article>
 
-        <h2>Structs</h2>
+        <h2>Books</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
@@ -109,7 +84,7 @@
 
       <article>
 
-        <h2>Collections</h2>
+        <h2>YouTube channels</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
@@ -141,6 +116,21 @@
           <p>But I, being poor, have only <em>my dreams</em>;</a></p>
           <p>I have spread <em>my dreams</em> under your feet;</a></p>
           <p>Tread softly because you tread on <em>my dreams</em>.</a></p>
+        </ul>
+
+        <ul>
+          <p><em>Emily Elizabeth Dickinson</em></p>
+
+          <p></p>
+          
+          <p></p>
+          <p><em></em></p>
+          <p></a></p>
+          <p><em></em></a></p>
+          <p><em></em> </a></p>
+          <p><em></em>;</a></p>
+          <p><em></em></a></p>
+          <p><em></em>.</a></p>
         </ul>
       </aside>
 
