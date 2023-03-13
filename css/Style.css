@@ -1,5 +1,5 @@
 h1 {
-  color: green;
+  color: red;
 }
 
 li {
@@ -54,7 +54,7 @@ body {
    значения добавляются в порядке верх(низ)–право–лево.
    В двузначных стенограммах значения добавляются
    от верхнего/нижнего края к левому/правому краю */
-padding: 10px 15px 15px 5px;
+/*padding: 10px 15px 15px 5px;*/
 
 /*
 padding-top: 10px;    то же самое
@@ -68,7 +68,7 @@ padding-block-end: 15px;
 padding-inline-start: 5px;
 */
 
-background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+/* background: red url(bg-graphic.png) 10px 10px repeat-x fixed; */
 
 /*
 background-color: red;
@@ -102,7 +102,6 @@ h1 {font-size: 1.5em;}
 /* -------------------------------------------------------------------------------------------- */
 div p, #id:first-line {
   background-color: red;
-  background-style: none
 }
 
 div p{
@@ -144,7 +143,6 @@ h1 {
 div p,
 #id:first-line {
   background-color: red;
-  background-style: none
 }
 
 div p {
@@ -154,4 +152,38 @@ div p {
 
 div p + p {
   padding-top: 0;
+}
+
+html {
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  mix-blend-mode: exclusion;
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0 0 -24px;
+  border: 3px solid #f80759;
+  border-radius: 100px;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease-out;
+  
+  &.is-moving {
+    transform: scale(0.7);
+  }
 }
